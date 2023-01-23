@@ -1,26 +1,40 @@
-# Antimalarial activity prediction
+# MAIP distillation: antimalarial potential prediction
 
-## Model Identifiers
-- Slug: maip-malaria
-- Ersilia ID: eos2gth
-- Tags: P.Falciparum, malaria, bioactivity
+Prediction of the antimalarial potential of small molecules. This model was originally trained on proprietary data from various sources, up to a total of >7M compounds. The training sets belong to Evotec, Johns Hopkins, MRCT, MMV - St. Jude, AZ, GSK, and St. Jude Vendor Library. In this implementation, we have used a teacher-student approach to train a surrogate model based on ChEMBL data (2M molecules) to provide a lite downloadable version of the original MAIP
 
-## Model Description
-Prediction of antimalarial activity 
-- Input: SMILES 
-- Output: EC50 
-- Model type: Regression
-- Mode of training: Retrained
-- Training data: 7191298 compounds ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_24/chembl_24_release_notes.txt
-- Experimentally validated: Yes
+## Identifiers
 
-## Source code
-This model is published by Nicolas Bosc, Eloy Felix, Ricardo Arcila, David Mendez, Martin R. Saunders, Darren V. S. Green, Jason Ochoada, Anang A. Shelat, Eric J. Martin, Preeti Iyer, Ola Engkvist, Andreas Verras, James Duffy, Jeremy Burrows, J. Mark F. Gardner & Andrew R. Leach, Journal of Cheminformatics volume 13, Article number: 13 (2021). MAIP: a web service for predicting blood‐stage malaria inhibitors. Received13 July 2020 Accepted: 20 January 2021 Published: 22 February 2021 DOI:https://doi.org/10.1186/s13321-021-00487-2
-- Code: https://www.ebi.ac.uk/chembl/maip/
+* EOS model ID: `eos2gth`
+* Slug: `maip-malaria-surrogate`
+
+## Characteristics
+
+* Input: `Compound`
+* Input Shape: `Single`
+* Task: `Classification`
+* Output: `Score`
+* Output Type: `Float`
+* Output Shape: `Single`
+* Interpretation: Higher score indicates Higher antimalarial potential
+
+## References
+
+* [Publication](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00487-2)
+* [Source Code](https://www.ebi.ac.uk/chembl/maip/)
+* Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
+
+## Citation
+
+If you use this model, please cite the [original authors](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00487-2) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
 ## License
-The GPL-v3 license applies to all parts of the repository that are not externally maintained libraries. This repository uses the externally maintained library "maip", located at `/model` and licensed under a MIT License
 
-## History
-- Model was downloaded on November 02, 2021 
+This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a None license.
 
+Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+
+## About Us
+
+The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+
+[Help us](https://www.ersilia.io/donate) achieve our mission!
