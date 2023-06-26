@@ -23,6 +23,11 @@ Prediction of the antimalarial potential of small molecules. This model was orig
 * [Source Code](https://www.ebi.ac.uk/chembl/maip/)
 * Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos2gth)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2gth.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos2gth) (AMD64)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00487-2) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
