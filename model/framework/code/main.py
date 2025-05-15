@@ -53,13 +53,13 @@ for i, smi in enumerate(smiles):
     X[i] = fp
 
 # run maip predictions
-model = joblib.load(os.path.join(ROOT, "..", "checkpoints", "MAIP_flaml_3600s.joblib"))
+model = joblib.load(os.path.join(ROOT, "..", "..", "checkpoints", "MAIP_flaml_3600s.joblib"))
 
 preds = model.predict(X)
 
 # write output
 with open(outfile, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["score"])
+    writer.writerow(["maip_score"])
     for p in preds:
         writer.writerow([p])
