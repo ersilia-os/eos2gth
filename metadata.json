@@ -4,21 +4,25 @@
     "Status": "Ready",
     "Title": "MAIP distillation: antimalarial potential prediction",
     "Description": "Prediction of the antimalarial potential of small molecules. This model was originally trained on proprietary data from various sources, up to a total of >7M compounds. The training sets belong to Evotec, Johns Hopkins, MRCT, MMV - St. Jude, AZ, GSK, and St. Jude Vendor Library. In this implementation, we have used a teacher-student approach to train a surrogate model based on ChEMBL data (2M molecules) to provide a lite downloadable version of the original MAIP\n",
-    "Mode": "Retrained",
+    "Source": "Local",
+    "Source Type": "Replicated",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
-    "Task": [
-        "Classification"
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "Malaria"
+    ],
+    "Target Organism": [
+        "Plasmodium falciparum"
     ],
     "Output": [
         "Score"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
     "Interpretation": "Higher score indicates Higher antimalarial potential",
     "Tag": [
         "P.falciparum",
@@ -26,12 +30,18 @@
         "Antimicrobial activity"
     ],
     "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00487-2",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2021,
     "Source Code": "https://www.ebi.ac.uk/chembl/maip/",
     "License": "None",
     "Contributor": "miquelduranfrigola",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2gth.zip",
+    "Incorporation Date": "2021-11-02",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2gth",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2gth.zip",
+    "Deployment": [
+        "Local"
     ]
 }
