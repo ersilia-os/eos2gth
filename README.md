@@ -40,8 +40,13 @@ Below are the **Output Columns** of the model:
 
 ### Resource Consumption
 - **Model Size (Mb):** `12`
-- **Environment Size (Mb):** `1140`
+- **Environment Size (Mb):** `1260`
+- **Image Size (Mb):** `1397.07`
 
+**Computational Performance (seconds):**
+- 10 inputs: `31.68`
+- 100 inputs: `21.51`
+- 10000 inputs: `315.85`
 
 ### References
 - **Source Code**: [https://www.ebi.ac.uk/chembl/maip/](https://www.ebi.ac.uk/chembl/maip/)
