@@ -2,8 +2,7 @@
 
 Prediction of the antimalarial potential of small molecules. This model was originally trained on proprietary data from various sources, up to a total of >7M compounds. The training sets belong to Evotec, Johns Hopkins, MRCT, MMV - St. Jude, AZ, GSK, and St. Jude Vendor Library. In this implementation, we have used a teacher-student approach to train a surrogate model based on ChEMBL data (2M molecules) to provide a lite downloadable version of the original MAIP
 
-This model was incorporated on 2021-11-02.
-
+This model was incorporated on 2021-11-02.Last packaged on 2025-11-19.
 
 ## Information
 ### Identifiers
@@ -42,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `12`
 - **Environment Size (Mb):** `1263`
-- **Image Size (Mb):** `1397.07`
+- **Image Size (Mb):** `1404.84`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.68`
-- 100 inputs: `21.51`
-- 10000 inputs: `315.85`
+- 10 inputs: `27.81`
+- 100 inputs: `17.62`
+- 10000 inputs: `65.3`
 
 ### References
 - **Source Code**: [https://www.ebi.ac.uk/chembl/maip/](https://www.ebi.ac.uk/chembl/maip/)
